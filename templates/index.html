@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroSphere</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to NeuroSphere!</h1>
+        <p>
+          This web app detects emotions from a live webcam feed and suggests
+          products based on the detected emotion. Making your shopping
+          experience smoother. Thanks for using it! Wishing you a Good Day 😊😊
+        </p>
+      </header>
+
+      <div class="webcam-container">
+        <video id="video" width="640" height="480" autoplay></video>
+        <button id="capture">Capture Emotion</button>
+      </div>
+
+      <div class="slider-container">
+        <h2 id="emotion-detected">Emotion Detected: None</h2>
+        <div class="slider" id="product-slider">
+          <!-- Product items will be inserted here by JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
